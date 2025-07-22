@@ -1,0 +1,18 @@
+proxies:
+  - name: "香港 05"
+    type: ss
+    server: cnthk-a.middlenet.xyz
+    port: 601
+    cipher: aes-128-gcm
+    password: 5a63d6d8-5347-49f9-bd0f-cfed52af7554
+    udp: true
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "香港 05"
+      - DIRECT
+
+rules:
+  - MATCH,🚀 节点选择
